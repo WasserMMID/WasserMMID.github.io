@@ -1,0 +1,306 @@
+.highcharts-legend-box{
+	visibility: hidden;
+}
+
+.highcharts-button-symbol{
+	visibility: hidden;
+}
+
+.return_button {
+	width: 60px;
+	height: 60px;
+	display: block;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+
+}
+
+.insel_detail_con .introBg {
+	display: block;
+  position: relative;
+  //width: 100%;
+
+  left: 0;
+  text-align: left;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
+  img {
+    display: block;
+    position: absolute;
+    width: 900px;
+		top: 230px;
+		left: 50px;
+  }
+}
+
+.insel_detail_con {
+	display: block;
+	position: relative;
+	min-height: 965px;
+
+	.introBg {
+	  width: 100%;
+		height: 946px;
+
+	  left: 0;
+	  text-align: left;
+	  background-position: right bottom;
+	  background-repeat: no-repeat;
+
+	  img {
+	    display: block;
+	    position: absolute;
+	    width: 900px;
+			top: 230px;
+			left: 50px;
+	  }
+	}
+
+	.intro_detail {
+		top: 15px;
+		padding: 0 30px;
+	}
+
+  .intro_nav {
+		top: 90px;
+    min-height: 946px;
+  }
+
+	.insel_name {
+		display: block;
+		position: absolute;
+		font-size: 35px;
+		top: 10px;
+		left: 50px;
+		width: 752px;
+		text-align: center;
+		font-family: 'Alegreya Sans', sans-serif;
+		//font-family: 'Pacifico', cursive;
+
+		color: #000;
+		font-weight: 400;
+	}
+
+	.regen {
+		top: 100px;
+	}
+
+	#legend {
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	.highcharts-button {
+		display: none;
+	}
+}
+
+.uebersicht {
+  display: block;
+  position: absolute;
+  right: 30px;
+  width: 450px;
+
+  .haushalt {
+    width: 320px;
+    height: 150px;
+    margin: 55px auto 40px;
+    text-align: center;
+  }
+
+  #wassertropfen_frisch{
+  	width:160px;
+  	height:150px;
+  	display: block;
+  	float: left;
+    margin: 0 auto;
+    background-size: 80px;
+    background-position: center top;
+  	background-image: url("../img/layout/wassertropfen_frisch.svg");
+  	background-repeat: no-repeat;
+  }
+
+  #wassertropfen_verbraucht{
+  	width:160px;
+  	height:150px;
+  	display: block;
+  	float: left;
+    background-size: 80px;
+    background-position: center top;
+    background-image: url("../img/layout/wassertropfen_verschmutzt.svg");
+    background-repeat: no-repeat;
+  }
+
+	#verbrauch_pro_person, #klaranlage_person {
+	  font-family: Arial;
+	  color: #000;
+	  font-size: 16pt;
+	  margin-top: 55px;
+	  text-align: center;
+  }
+
+  .bezeichnung{
+    display: block;
+    width: 120px;
+    text-align: center;
+    padding: 0 20px;
+  	font-size: 8pt;
+  	color: black;
+    margin-top: 45px;
+  }
+
+
+}
+
+.infosatz {
+	text-align: center;
+	font-size: 12px;
+	color: #666666;
+	margin-bottom: 10px;
+}
+
+.highcharts-credits {
+  display: none;
+}
+
+.footer {
+	display: block;
+	float: left;
+	bottom: 0;
+	z-index: 400;
+}
+
+
+.diagramm_no {
+	display: block;
+	width: 410px;
+	height: 325px;
+	position: absolute;
+	top: 55px;
+	right: 8px;
+	margin: 0;
+	padding: 0;
+	background:url('../img/layout/no_d.png');
+	background-size: 326px auto;
+	background-repeat: no-repeat;
+}
+
+.diagramm_no_s_1, .diagramm_no_s_2 {
+	display: block;
+	width: 185px;
+	height: 170px;
+	position: absolute;
+	background:url('../img/layout/no_d_s.png');
+	background-size: 183px auto;
+	background-repeat: no-repeat;
+}
+
+.diagramm_no_s_1 {
+	top: 81px;
+	right: 160px;
+}
+
+.diagramm_no_s_2 {
+	top: 371px;
+	right: 160px;
+}
+
+.drop_no_1, .drop_no_2 {
+	display: block;
+	width: 110px;
+	height: 115px;
+	position: absolute;
+	background:url('../img/layout/no_d_d.png');
+	background-size: 106px auto;
+	background-repeat: no-repeat;
+	top: 255px;
+
+}
+
+.drop_no_1 {
+	right: 245px;
+}
+
+.drop_no_2 {
+	right: 86px;
+}
+
+.infosatz {
+	width: 330px;
+	margin: 0 auto;
+
+	img {
+		display: block;
+		float: left;
+		margin-top: 67px;
+		width: 30px;
+
+		& + p {
+			display: block;
+			float: left;
+			width: 280px;
+			margin-top: 70px;
+			margin-left: 20px;
+			color: #666666;
+			text-align: left;
+		}
+	}
+}
+
+.laender_select {
+	display: block;
+	position: absolute;
+	right: 230px;
+	top: 60px;
+	z-index: 99999;
+
+	.search_icon {
+		position: relative;
+		left: 220px;
+		top: -30px;
+		width: 20px;
+		height: 20px;
+
+		img {
+			height: 20px;
+		}
+	}
+
+	input {
+	  padding: 2px 10px;
+	  border: 1px solid #000;
+	  border-radius: 3px;
+		height: 30px;
+		width: 230px;
+	}
+
+	.list {
+	  list-style-type: none;
+	  margin: 0;
+	  opacity: 0;
+	  padding: 4px 7px;
+	  position: absolute;
+	  margin-left: -1000px;
+	  background: white;
+	  box-shadow: 1px 1px 6px rgb(195, 195, 195);
+	  border-radius: 2px;
+		width: 230px;
+	}
+
+	.list li {
+	  padding: 3px 5px;
+	  cursor: pointer;
+	}
+
+	.list li:hover {
+	  background: lightgray;
+	}
+
+	.show .list {
+	  margin-left: 0;
+	  opacity: 1;
+	}
+
+}

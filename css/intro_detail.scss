@@ -1,0 +1,104 @@
+.intro_detail {
+  position: absolute;
+  right: 90px;
+  top: 50px;
+  width: 450px;
+  height: 600px;
+  padding: 0px 60px 0;
+  z-index: 1000;
+  vertical-align: middle;
+
+  font-family: 'Alegreya Sans', sans-serif;
+
+  h1 {
+    font-size: 28px;
+    line-height: 50px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .intro_des {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .intro_des.einleitung {
+
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 80px;
+
+    & + img {
+      display: block;
+      float: left;
+      margin-top: 67px;
+      width: 30px;
+
+      & + p {
+        display: block;
+        float: left;
+        width: 300px;
+        margin-top: 70px;
+        margin-left: 20px;
+        color: #666666;
+      }
+    }
+  }
+}
+
+.intro_detail_buttons {
+
+  img {
+    display: block;
+    float: right;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+.intro_con {
+  display: block;
+  position: relative;
+  min-height: 763px;
+
+  .intro_nav {
+    min-height: 763px;
+  }
+}
+
+.intro_nav {
+  position: absolute;
+  top: 0;
+  right: 70px;
+  width: 40px;
+}
+
+.intro_buttom {
+  //display: block;
+  position: absolute;
+  height:60px;
+  bottom: 180px;
+  right: 265px;
+  z-index: 9999;
+
+  a {
+    //display: block;
+    //float: left;
+    margin: 0 25px 0 125px;
+    padding: 20px 10px;
+    color: #000;
+    width: 200px;
+    //margin: auto;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+
+  }
+
+  &.to_islands {
+    bottom: 280px;
+  }
+}

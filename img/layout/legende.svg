@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 350 25" style="enable-background:new 0 0 350 25;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#7393A7;}
+	.st1{fill:none;}
+	.st2{fill:#666666;}
+	.st3{font-family:'LucidaGrande';}
+	.st4{font-size:12px;}
+	.st5{fill:#80BEE5;}
+	.st6{fill:#B9D3E4;}
+</style>
+<g>
+	<circle class="st0" cx="12.6" cy="13" r="11"/>
+</g>
+<rect x="33.1" y="8.2" class="st1" width="106.5" height="9.8"/>
+<text transform="matrix(1 0 0 1 25.35 16.7515)" class="st2 st3 st4">Höchster Wert</text>
+<g>
+	<circle class="st5" cx="125" cy="13" r="11"/>
+</g>
+<rect x="145.1" y="8.2" class="st1" width="106.5" height="9.8"/>
+<text transform="matrix(1 0 0 1 138.1084 16.7515)" class="st2 st3 st4">Aktuelles Land</text>
+<g>
+	<circle class="st6" cx="239" cy="13" r="11"/>
+</g>
+<rect x="251.1" y="8.2" class="st1" width="106.5" height="9.8"/>
+<text transform="matrix(1 0 0 1 253.1084 16.7515)" class="st2 st3 st4">Niedrigster Wert</text>
+</svg>

@@ -1,0 +1,143 @@
+.nav_points {
+  display: block;
+  margin-top: 135px;
+  //position: absolute;
+}
+
+.touchpoint {
+  display: block;
+  margin-top: 15px;
+  margin-left: 26px;
+  position: relative;
+  background: transparent;
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  background: #000;
+  border: 1px solid #000;
+
+  &.active {
+    background: #fff;
+    border: 1px solid #000;
+  }
+}
+
+.pulse {
+  width: 15px;
+  height: 15px;
+  border: 3px solid #C14216;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  z-index: 10;
+  position: absolute;
+  background-color: #C14216;
+}
+
+.dot {
+  border: 5px solid #C14216;
+  background: transparent;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  height: 50px;
+  width: 50px;
+  -webkit-animation: pulse 1s ease-out;
+  -moz-animation: pulse 1s ease-out;
+  animation: pulse 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  position: absolute;
+  top: -22px;
+  left: -22px;
+  z-index: 1;
+  opacity: 0;
+}
+
+@-moz-keyframes pulse {
+0% {
+  -moz-transform: scale(0);
+  opacity: 0.0;
+}
+25% {
+  -moz-transform: scale(0);
+  opacity: 0.1;
+}
+50% {
+  -moz-transform: scale(0.1);
+  opacity: 0.3;
+}
+75% {
+  -moz-transform: scale(0.5);
+  opacity: 0.5;
+}
+100% {
+  -moz-transform: scale(1);
+  opacity: 0.0;
+}
+}
+
+@-webkit-keyframes "pulse" {
+0% {
+  -webkit-transform: scale(0);
+  opacity: 0.0;
+}
+25% {
+  -webkit-transform: scale(0);
+  opacity: 0.1;
+}
+50% {
+  -webkit-transform: scale(0.1);
+  opacity: 0.3;
+}
+75% {
+  -webkit-transform: scale(0.5);
+  opacity: 0.5;
+}
+100% {
+  -webkit-transform: scale(1);
+  opacity: 0.0;
+}
+}
+
+.divpoint {
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  z-index: 900;
+}
+.divpoint2 {
+  width: 50px;
+  height: 400px;
+  left: 640px;
+  top: 450px;
+}
+.divpoint3 {
+  left: 410px;
+  top: 320px;
+}
+.divpoint4 {
+  left: 250px;
+  top: 370px;
+}
+.divpoint5 {
+  width: 30px;
+  height: 200px;
+  left: 438px;
+  top: 450px;
+}
+.divpoint6 {
+  width: 140px;
+  height: 80px;
+  left: 570px;
+  top: 340px;
+}
+.divpoint7 {
+  width: 100px;
+  height: 100px;
+  left: 200px;
+  top: 500px;
+}

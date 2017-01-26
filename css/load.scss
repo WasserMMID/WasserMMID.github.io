@@ -4,9 +4,10 @@ $base_blue: #5B8FB1;
 
 
 body {
-  height: 100%;
+  //height: 100%;
   width: 100%;
   margin: 0;
+  min-height: 100vh;
   background: lighten(#efefef, 5%);
   font-family: 'Alegreya Sans', sans-serif;
 }
@@ -117,8 +118,9 @@ body {
 
 footer {
   display: block;
+  //position: absolute;
   margin-top: 20px;
-  //bottom: 0;
+  bottom: 0;
   width: 100%;
   background: #000000;
   text-align: right;
@@ -316,4 +318,8 @@ footer.start_footer {
     color: #000;
     text-decoration: none;
   }
+}
+
+.index_con {
+  min-height: 100vh;
 }

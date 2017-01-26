@@ -1,7 +1,7 @@
 body {
-  height: 100%;
   width: 100%;
   margin: 0;
+  min-height: 100vh;
   background: #fcfcfc;
   font-family: 'Alegreya Sans', sans-serif; }
 
@@ -83,6 +83,7 @@ body {
 footer {
   display: block;
   margin-top: 20px;
+  bottom: 0;
   width: 100%;
   background: #000000;
   text-align: right;
@@ -226,5 +227,8 @@ footer.start_footer {
   .quelle:hover {
     color: #000;
     text-decoration: none; }
+
+.index_con {
+  min-height: 100vh; }
 
 /*# sourceMappingURL=load.css.map */

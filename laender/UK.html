@@ -2,13 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Waaser</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wasser</title>
     <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon.png">
-		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.6/angular.min.js"></script>
     <script src="../js/jquery.js"></script>
   </head>
   <body>
@@ -23,14 +24,18 @@
         <ul>
           <li class=""><a href="../intro.html">Intro</a></li>
           <li class="ressourcen"><a href="../islands.html">Übersicht</a></li>
-          <!-- <li class="ressourcen">Entdecken</li> -->
         </ul>
+      </div>
+      <div class="laender_select">
+        <div ng-app="app" ng-controller="mainCtrl">
+          <dropdown-list id="select_country" data-items-list="itemsList" data-placeholder="Anderes Land suchen"></dropdown-list>
+        </div>
+        <div class="search_icon">
+          <img src="../img/layout/search.png" alt="">
+        </div>
       </div>
     </div>
     <div class="container insel_detail_con">
-      <!-- <a class="return_button" href="../islands.html">
-        <img src="../img/layout/icon-zurueck.svg" alt="">
-      </a> -->
       <div class="introBg">
         <img src="../img/insel.svg" alt="">
       </div>
@@ -93,17 +98,19 @@
           <div class="haushalt">
             <div id="wassertropfen_frisch">
               <p id="verbrauch_pro_person"></p>
+              <div class="drop_no_1"></div>
               <p class="bezeichnung">Verbrauch pro Bewohner</p>
             </div>
             <div id="wassertropfen_verbraucht">
               <p id="klaranlage_person"></p>
+              <div class="drop_no_2"></div>
               <p class="bezeichnung">
                 Kläranlagenanschlüsse<p>
             </div>
           </div>
           <div id="uebersicht_resourcen" style="width: 420px; height: 150px; "></div>
 
-          <div class="einleitung">
+          <div class="infosatz">
             <img src="../img/layout/hand.png" alt="">
             <p>Klicke auf das Land, um mehr zu erfahren oder nutze die Punkte rechts, um zu navigieren.</p>
           </div>
@@ -114,63 +121,72 @@
       <div class="intro_detail detail2 display_off">
 
         <div id="suesswasser" style="min-width: 450px; height: 400px; margin: 0 auto;"></div>
-        <div class="infosatz">
-          <p>Im Vergleich zum niedrigsten und höchsten aufgezeichneten Wert in Europa.</p>
-        </div>
+        <div class="diagramm_no"></div>
         <div id="legend">
           <img src="../img/layout/Legende.svg" style="margin:10px 0 10px">
         </div>
-
-
+        <div class="infosatz">
+          <img src="../img/layout/hand.png" alt="">
+          <p>Diese Darstellung ermöglicht es dir, den aktuellen Wert des Landes mit dem niedrigsten und höchsten Wert in Europa zu vergleichen. Fahre mit dem Mauszeiger über die einzelnen Kreislinien, um mehr zu erfahren.</p>
+        </div>
       </div>
       <div class="intro_detail detail3 display_off">
         <div id="verbrauch" style="min-width: 450px; height: 400px; margin: 0 auto;"></div>
-        <div class="infosatz">
-          <p>Im Vergleich zum niedrigsten und höchsten aufgezeichneten Wert in Europa.</p>
-        </div>
+        <div class="diagramm_no"></div>
         <div id="legend">
           <img src="../img/layout/Legende.svg" style="margin:10px 0 10px">
+        </div>
+        <div class="infosatz">
+          <img src="../img/layout/hand.png" alt="">
+          <p>Diese Darstellung ermöglicht es dir, den aktuellen Wert des Landes mit dem niedrigsten und höchsten Wert in Europa zu vergleichen. Fahre mit dem Mauszeiger über die einzelnen Kreislinien, um mehr zu erfahren.</p>
         </div>
       </div>
       <div class="intro_detail detail4 display_off">
-        <div id="wirtschaft_1" style="min-width: 450px; height: 400px; margin: 0 auto;"></div>
+        <div id="wirtschaft_1" style="min-width: 450px; height: 290px; margin: 0 auto;"></div>
         <div class="diagramm_no_s_1"></div>
-        <div id="wirtschaft_2" style="min-width: 450px; height: 400px; margin: 0 auto;"></div>
+        <div id="wirtschaft_2" style="min-width: 450px; height: 290px; margin: 0 auto;"></div>
         <div class="diagramm_no_s_2"></div>
-        <div class="infosatz">
-          <p>Im Vergleich zum niedrigsten und höchsten aufgezeichneten Wert in Europa.</p>
-        </div>
         <div id="legend">
           <img src="../img/layout/Legende.svg" style="margin:10px 0 10px">
         </div>
+        <div class="infosatz">
+          <img src="../img/layout/hand.png" alt="">
+          <p>Diese Darstellung ermöglicht es dir, den aktuellen Wert des Landes mit dem niedrigsten und höchsten Wert in Europa zu vergleichen. Fahre mit dem Mauszeiger über die einzelnen Kreislinien, um mehr zu erfahren.</p>
+        </div>
       </div>
       <div class="intro_detail detail5 display_off">
-        <div id="entnahme_1" style="min-width: 450px; height: 400px; margin: 0 auto;"></div>
-        <div class="infosatz">
-          <p>Im Vergleich zum niedrigsten und höchsten aufgezeichneten Wert in Europa.</p>
-        </div>
+        <div id="entnahme_1" style="min-width: 450px; height: 290px; margin: 0 auto;"></div>
+        <div class="diagramm_no_s_1"></div>
+        <div id="entnahme_2" style="min-width: 450px; height: 290px; margin: 0 auto;"></div>
+        <div class="diagramm_no_s_2"></div>
         <div id="legend">
-        <img src="../img/layout/Legende.svg" style="margin:10px 0 10px">
+          <img src="../img/layout/Legende.svg" style="margin:10px 0 10px">
         </div>
-        <div id="entnahme_2" style="min-width: 450px; height: 400px; margin: 0 auto;"></div>
+        <div class="infosatz">
+          <img src="../img/layout/hand.png" alt="">
+          <p>Diese Darstellung ermöglicht es dir, den aktuellen Wert des Landes mit dem niedrigsten und höchsten Wert in Europa zu vergleichen. Fahre mit dem Mauszeiger über die einzelnen Kreislinien, um mehr zu erfahren.</p>
+        </div>
       </div>
       <div class="intro_detail detail6 display_off">
         <div id="klare" style="min-width: 450px; height: 400px; margin: 0 auto;"></div>
         <div class="diagramm_no"></div>
-        <div class="infosatz">
-          <p>Im Vergleich zum niedrigsten und höchsten aufgezeichneten Wert in Europa.</p>
-        </div>
         <div id="legend">
-        <img src="../img/layout/Legende.svg" style="margin:10px 0 10px">
+          <img src="../img/layout/Legende.svg" style="margin:10px 0 10px">
+        </div>
+        <div class="infosatz">
+          <img src="../img/layout/hand.png" alt="">
+          <p>Diese Darstellung ermöglicht es dir, den aktuellen Wert des Landes mit dem niedrigsten und höchsten Wert in Europa zu vergleichen. Fahre mit dem Mauszeiger über die einzelnen Kreislinien, um mehr zu erfahren.</p>
         </div>
       </div>
       <div class="intro_detail detail7 display_off">
         <div id="abfluss" style="min-width: 450px; height: 400px; margin: 0 auto;"></div>
-        <div class="infosatz">
-          <p>Im Vergleich zum niedrigsten und höchsten aufgezeichneten Wert in Europa.</p>
-        </div>
+        <div class="diagramm_no"></div>
         <div id="legend">
           <img src="../img/layout/Legende.svg" style="margin:10px 0 10px">
+        </div>
+        <div class="infosatz">
+          <img src="../img/layout/hand.png" alt="">
+          <p>Diese Darstellung ermöglicht es dir, den aktuellen Wert des Landes mit dem niedrigsten und höchsten Wert in Europa zu vergleichen. Fahre mit dem Mauszeiger über die einzelnen Kreislinien, um mehr zu erfahren.</p>
         </div>
       </div>
 
@@ -191,8 +207,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://code.highcharts.com/highcharts-more.js"></script>
     <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
-    <script src="../js/uk_highcharts.js"></script>
-    <script src="../js/js.js"></script>
+    <script src="../js/vereinigtes_koenigreich_highcharts.js"></script>
+    <script src="../js/js.js"></script><script src="../js/select.js"></script>
 
 
 

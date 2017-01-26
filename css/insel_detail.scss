@@ -252,7 +252,7 @@
 .laender_select {
 	display: block;
 	position: absolute;
-	right: 230px;
+	right: 320px;
 	top: 60px;
 	z-index: 99999;
 
@@ -266,12 +266,18 @@
 		img {
 			height: 20px;
 		}
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 
 	input {
 	  padding: 2px 10px;
-	  border: 1px solid #000;
-	  border-radius: 3px;
+		border: none;
+	  border-bottom: 1px solid #000;
+		box-shadow: none;
+		background:lighten(#efefef, 5%);
 		height: 30px;
 		width: 230px;
 	}

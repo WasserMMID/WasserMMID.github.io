@@ -360,7 +360,7 @@ function initIslands(){
     floatIsland.className = 'island island_'+item[1];
     floatIsland.href= 'laender/' + item[11] + '.html';
 
-    $('.islands'floatIsland.href).append(floatIsland);
+    $('.islands').append(floatIsland);
 
     $('.island_' + item[1]).css('background', 'url(./img/laender/'+ item[11] +'.svg)');
     $('.island_' + item[1]).css('background-repeat', 'no-repeat');

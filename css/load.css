@@ -220,4 +220,11 @@ footer.start_footer {
   .impressum_con a {
     color: #666666; }
 
+.quelle {
+  color: #000;
+  text-decoration: none; }
+  .quelle:hover {
+    color: #000;
+    text-decoration: none; }
+
 /*# sourceMappingURL=load.css.map */

@@ -360,7 +360,7 @@ function initIslands(){
     floatIsland.className = 'island island_'+item[1];
     floatIsland.href= 'laender/' + item[11] + '.html';
 
-    $('.islands').append(floatIsland);
+    $('.islands'floatIsland.href).append(floatIsland);
 
     $('.island_' + item[1]).css('background', 'url(./img/laender/'+ item[11] +'.svg)');
     $('.island_' + item[1]).css('background-repeat', 'no-repeat');
@@ -380,7 +380,7 @@ function ressourcen(){
 
     var floatIsland = document.createElement( 'a' );
     floatIsland.className = 'island island_'+item[1];
-    floatIsland.href= 'laender/' + item[0] + '.html';
+    floatIsland.href= 'laender/' + item[11] + '.html';
 
     $('.islands').append(floatIsland);
 
@@ -409,7 +409,7 @@ function verbrauch(){
 
     var floatIsland = document.createElement( 'a' );
     floatIsland.className = 'island island_'+ item[3];
-    floatIsland.href= 'laender/' + item[0]+'.html';
+    floatIsland.href= 'laender/' + item[11]+'.html';
 
     $('.islands').append(floatIsland);
 
@@ -437,7 +437,7 @@ function wirtschaft(){
 
     var floatIsland = document.createElement( 'a' );
     floatIsland.className = 'island island_'+item[5];
-    floatIsland.href= 'laender/' + item[0]+'.html';
+    floatIsland.href= 'laender/' + item[11]+'.html';
 
     $('.islands').append(floatIsland);
 
@@ -465,7 +465,7 @@ function entnahme(){
 
     var floatIsland = document.createElement( 'a' );
     floatIsland.className = 'island island_'+item[7];
-    floatIsland.href= 'laender/' + item[0]+'.html';
+    floatIsland.href= 'laender/' + item[11]+'.html';
 
     $('.islands').append(floatIsland);
 
@@ -493,7 +493,7 @@ function klaerung(){
 
     var floatIsland = document.createElement( 'a' );
     floatIsland.className = 'island island_'+item[9];
-    floatIsland.href= 'laender/' + item[0]+'.html';
+    floatIsland.href= 'laender/' + item[11]+'.html';
 
     $('.islands').append(floatIsland);
 
